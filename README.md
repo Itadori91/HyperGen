@@ -1,14 +1,15 @@
 <div align="center">
 
-<a href="https://cedar.ai"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cedarai/cedar/main/assets/cedar_logo_white.png">
-<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cedarai/cedar/main/assets/cedar_logo_black.png">
-<img alt="cedar logo" src="https://raw.githubusercontent.com/cedarai/cedar/main/assets/cedar_logo_black.png" height="110" style="max-width: 100%;">
+<a href="https://hypergen.ai"><picture>
+
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hypergen/hypergen/main/assets/hypergen_logo_white.png">
+<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hypergen/hypergen/main/assets/hypergen_logo_black.png">
+<img alt="hypergen logo" src="https://raw.githubusercontent.com/hypergen/hypergen/main/assets/hypergen_logo_black.png" height="110" style="max-width: 100%;">
 </picture></a>
 
-<a href="https://colab.research.google.com/github/cedarai/notebooks/blob/main/quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" width="150"></a>
-<a href="https://discord.gg/cedar"><img src="https://img.shields.io/discord/1234567890?color=5865F2&logo=discord&logoColor=white&label=Discord" width="150"></a>
-<a href="https://docs.cedar.ai"><img src="https://img.shields.io/badge/docs-cedar.ai-blue" width="120"></a>
+<a href="https://colab.research.google.com/github/hypergen/notebooks/blob/main/quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" width="150"></a>
+<a href="https://discord.gg/hypergen"><img src="https://img.shields.io/discord/1234567890?color=5865F2&logo=discord&logoColor=white&label=Discord" width="150"></a>
+<a href="https://docs.hypergen.ai"><img src="https://img.shields.io/badge/docs-hypergen.ai-blue" width="120"></a>
 
 ### Train & run image and video diffusion models 3x faster with 80% less VRAM!
 
@@ -18,57 +19,57 @@
 
 ## ✨ Simple as 5 Lines
 
-Cedar makes training and running diffusion models incredibly simple. No lengthy notebooks, no complex configurations - just clean Python code:
+HyperGen makes training and running diffusion models incredibly simple. No lengthy notebooks, no complex configurations - just clean Python code:
 
 ```python
-import cedar
+import hypergen
 
-model = cedar.Model.load("flux/flux-dev")
-dataset = cedar.Dataset.load("/path/to/images")
+model = hypergen.Model.load("flux/flux-dev")
+dataset = hypergen.Dataset.load("/path/to/images")
 lora = model.train_lora(dataset)
 image = model.run_lora(prompt="A cat holding a sign that says hello world", lora=lora)
 ```
 
-That's it! Cedar handles optimization, memory management, and acceleration automatically.
+That's it! HyperGen handles optimization, memory management, and acceleration automatically.
 
 ## 🚀 Supported Models
 
-| Model Family           | Type  | Memory Reduction | Speed Improvement | Colab Notebook                                                                                              |
-| ---------------------- | ----- | ---------------- | ----------------- | ----------------------------------------------------------------------------------------------------------- |
-| **FLUX.1**             | Image | 80% less VRAM    | 3x faster         | [▶️ Try now](https://colab.research.google.com/github/cedarai/notebooks/blob/main/flux_training.ipynb)      |
-| **Stable Diffusion 3** | Image | 75% less VRAM    | 2.8x faster       | [▶️ Try now](https://colab.research.google.com/github/cedarai/notebooks/blob/main/sd3_training.ipynb)       |
-| **SDXL**               | Image | 70% less VRAM    | 2.5x faster       | [▶️ Try now](https://colab.research.google.com/github/cedarai/notebooks/blob/main/sdxl_training.ipynb)      |
-| **CogVideoX**          | Video | 85% less VRAM    | 3.2x faster       | [▶️ Try now](https://colab.research.google.com/github/cedarai/notebooks/blob/main/cogvideox_training.ipynb) |
-| **Luma Dream Machine** | Video | 80% less VRAM    | 3x faster         | [▶️ Try now](https://colab.research.google.com/github/cedarai/notebooks/blob/main/luma_training.ipynb)      |
-| **Sora (Replica)**     | Video | 82% less VRAM    | 2.9x faster       | [▶️ Try now](https://colab.research.google.com/github/cedarai/notebooks/blob/main/sora_training.ipynb)      |
+| Model Family           | Type  | Memory Reduction | Speed Improvement | Colab Notebook                                                                                               |
+| ---------------------- | ----- | ---------------- | ----------------- | ------------------------------------------------------------------------------------------------------------ |
+| **FLUX.1**             | Image | 80% less VRAM    | 3x faster         | [▶️ Try now](https://colab.research.google.com/github/hypergen/notebooks/blob/main/flux_training.ipynb)      |
+| **Stable Diffusion 3** | Image | 75% less VRAM    | 2.8x faster       | [▶️ Try now](https://colab.research.google.com/github/hypergen/notebooks/blob/main/sd3_training.ipynb)       |
+| **SDXL**               | Image | 70% less VRAM    | 2.5x faster       | [▶️ Try now](https://colab.research.google.com/github/hypergen/notebooks/blob/main/sdxl_training.ipynb)      |
+| **CogVideoX**          | Video | 85% less VRAM    | 3.2x faster       | [▶️ Try now](https://colab.research.google.com/github/hypergen/notebooks/blob/main/cogvideox_training.ipynb) |
+| **Luma Dream Machine** | Video | 80% less VRAM    | 3x faster         | [▶️ Try now](https://colab.research.google.com/github/hypergen/notebooks/blob/main/luma_training.ipynb)      |
+| **Sora (Replica)**     | Video | 82% less VRAM    | 2.9x faster       | [▶️ Try now](https://colab.research.google.com/github/hypergen/notebooks/blob/main/sora_training.ipynb)      |
 
-- See [all supported models](https://docs.cedar.ai/models) and [performance benchmarks](https://docs.cedar.ai/benchmarks)
-- Browse our [model zoo](https://huggingface.co/cedar-models) on Hugging Face
-- Check out [community fine-tunes](https://docs.cedar.ai/community)
+- See [all supported models](https://docs.hypergen.ai/models) and [performance benchmarks](https://docs.hypergen.ai/benchmarks)
+- Browse our [model zoo](https://huggingface.co/hypergen) on Hugging Face
+- Check out [community fine-tunes](https://docs.hypergen.ai/community)
 
 ## ⚡ Installation
 
 ### Quick Install
 
 ```bash
-pip install cedar
+pip install hypergen
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/cedarai/cedar.git
-cd cedar
+git clone https://github.com/hypergen/hypergen.git
+cd hypergen
 pip install -e .
 ```
 
 ### Docker
 
 ```bash
-docker run -it --gpus all cedar/cedar:latest
+docker run -it --gpus all hypergen/hypergen:latest
 ```
 
-## 🦌 Why Cedar?
+## ☄️ Why HyperGen?
 
 **🎯 Dead Simple API**: 5 lines vs 500+ line notebooks. Focus on your ideas, not infrastructure.
 
@@ -85,10 +86,10 @@ docker run -it --gpus all cedar/cedar:latest
 ### Image Generation
 
 ```python
-import cedar
+import hypergen
 
 # Load any diffusion model
-model = cedar.Model.load("runwayml/stable-diffusion-v1-5")
+model = hypergen.Model.load("runwayml/stable-diffusion-v1-5")
 
 # Generate images
 images = model.generate([
@@ -97,17 +98,17 @@ images = model.generate([
 ], batch_size=2)
 
 # Save results
-cedar.save_images(images, "outputs/")
+hypergen.save_images(images, "outputs/")
 ```
 
 ### LoRA Training
 
 ```python
-import cedar
+import hypergen
 
 # Load model and dataset
-model = cedar.Model.load("black-forest-labs/FLUX.1-dev")
-dataset = cedar.Dataset.load("./my_photos", format="folder")
+model = hypergen.Model.load("black-forest-labs/FLUX.1-dev")
+dataset = hypergen.Dataset.load("./my_photos", format="folder")
 
 # Train LoRA with automatic optimization
 lora = model.train_lora(
@@ -128,10 +129,10 @@ image = model.run_lora(
 ### Video Generation
 
 ```python
-import cedar
+import hypergen
 
 # Load video model
-model = cedar.Model.load("THUDM/CogVideoX-5b")
+model = hypergen.Model.load("THUDM/CogVideoX-5b")
 
 # Generate video
 video = model.generate_video(
@@ -140,42 +141,42 @@ video = model.generate_video(
     fps=24
 )
 
-cedar.save_video(video, "golden_retriever.mp4")
+hypergen.save_video(video, "golden_retriever.mp4")
 ```
 
 ### Batch Processing
 
 ```python
-import cedar
+import hypergen
 
-model = cedar.Model.load("flux/flux-dev")
-prompts = cedar.Dataset.load("prompts.txt")
+model = hypergen.Model.load("flux/flux-dev")
+prompts = hypergen.Dataset.load("prompts.txt")
 
 # Process thousands of prompts efficiently
 for batch in prompts.batch(32):
     images = model.generate(batch.prompts)
-    cedar.save_images(images, f"batch_{batch.id}/")
+    hypergen.save_images(images, f"batch_{batch.id}/")
 ```
 
 ## 🚀 Performance Benchmarks
 
-We tested Cedar against standard implementations across different hardware configurations:
+We tested HyperGen against standard implementations across different hardware configurations:
 
 ### FLUX.1 Training (LoRA, 1000 steps)
 
-| Hardware  | 🦌 Cedar  | Standard  | Memory   | Speed       |
-| --------- | --------- | --------- | -------- | ----------- |
-| RTX 4090  | 8GB VRAM  | 22GB VRAM | 80% less | 3.2x faster |
-| A100 40GB | 12GB VRAM | 38GB VRAM | 75% less | 2.8x faster |
-| A100 80GB | 18GB VRAM | 76GB VRAM | 80% less | 3.1x faster |
+| Hardware  | ☄️ HyperGen | Standard  | Memory   | Speed       |
+| --------- | ----------- | --------- | -------- | ----------- |
+| RTX 4090  | 8GB VRAM    | 22GB VRAM | 80% less | 3.2x faster |
+| A100 40GB | 12GB VRAM   | 38GB VRAM | 75% less | 2.8x faster |
+| A100 80GB | 18GB VRAM   | 76GB VRAM | 80% less | 3.1x faster |
 
 ### CogVideoX Generation (16 frames, 720p)
 
-| Hardware  | 🦌 Cedar  | Standard  | Memory   | Speed       |
-| --------- | --------- | --------- | -------- | ----------- |
-| RTX 4090  | 14GB VRAM | OOM       | 85% less | 3x faster   |
-| A100 40GB | 22GB VRAM | 38GB VRAM | 82% less | 3.3x faster |
-| A100 80GB | 28GB VRAM | 72GB VRAM | 85% less | 3.1x faster |
+| Hardware  | ☄️ HyperGen | Standard  | Memory   | Speed       |
+| --------- | ----------- | --------- | -------- | ----------- |
+| RTX 4090  | 14GB VRAM   | OOM       | 85% less | 3x faster   |
+| A100 40GB | 22GB VRAM   | 38GB VRAM | 82% less | 3.3x faster |
+| A100 80GB | 28GB VRAM   | 72GB VRAM | 85% less | 3.1x faster |
 
 _Benchmarks conducted with fp16 precision, batch size optimized for each setup_
 
@@ -184,9 +185,9 @@ _Benchmarks conducted with fp16 precision, batch size optimized for each setup_
 ### Custom Optimization
 
 ```python
-import cedar
+import hypergen
 
-model = cedar.Model.load("flux/flux-dev")
+model = hypergen.Model.load("flux/flux-dev")
 model.configure(
     precision="bf16",           # or fp16, fp32
     attention_backend="flash",  # flash, xformers, native
@@ -198,10 +199,10 @@ model.configure(
 ### Multi-GPU Training
 
 ```python
-import cedar
+import hypergen
 
-model = cedar.Model.load("flux/flux-dev", num_gpus=4)
-dataset = cedar.Dataset.load("./large_dataset")
+model = hypergen.Model.load("flux/flux-dev", num_gpus=4)
+dataset = hypergen.Dataset.load("./large_dataset")
 
 lora = model.train_lora(
     dataset,
@@ -213,16 +214,16 @@ lora = model.train_lora(
 ### Custom Datasets
 
 ```python
-import cedar
+import hypergen
 
 # From Hugging Face
-dataset = cedar.Dataset.load("username/my-dataset")
+dataset = hypergen.Dataset.load("username/my-dataset")
 
 # From local folder
-dataset = cedar.Dataset.load("./images", format="folder")
+dataset = hypergen.Dataset.load("./images", format="folder")
 
 # From URLs
-dataset = cedar.Dataset.load([
+dataset = hypergen.Dataset.load([
     "https://example.com/image1.jpg",
     "https://example.com/image2.jpg"
 ])
@@ -237,12 +238,12 @@ dataset = dataset.preprocess(
 
 ## 📚 Documentation
 
-- 📖 [Getting Started Guide](https://docs.cedar.ai/getting-started)
-- 🎯 [API Reference](https://docs.cedar.ai/api)
-- 🏗️ [Architecture Overview](https://docs.cedar.ai/architecture)
-- 🔧 [Advanced Usage](https://docs.cedar.ai/advanced)
-- 🤝 [Contributing](https://docs.cedar.ai/contributing)
-- 🐛 [Troubleshooting](https://docs.cedar.ai/troubleshooting)
+- 📖 [Getting Started Guide](https://docs.hypergen.ai/getting-started)
+- 🎯 [API Reference](https://docs.hypergen.ai/api)
+- 🏗️ [Architecture Overview](https://docs.hypergen.ai/architecture)
+- 🔧 [Advanced Usage](https://docs.hypergen.ai/advanced)
+- 🤝 [Contributing](https://docs.hypergen.ai/contributing)
+- 🐛 [Troubleshooting](https://docs.hypergen.ai/troubleshooting)
 
 ## 🌟 Key Optimizations
 
@@ -269,13 +270,13 @@ dataset = dataset.preprocess(
 
 ## 🤝 Community & Support
 
-| Platform             | Link                                                   | Description                       |
-| -------------------- | ------------------------------------------------------ | --------------------------------- |
-| 📚 **Documentation** | [docs.cedar.ai](https://docs.cedar.ai)                 | Complete guides and API reference |
-| 💬 **Discord**       | [Join our Discord](https://discord.gg/cedar)           | Community support and discussions |
-| 🐙 **GitHub Issues** | [Report bugs](https://github.com/cedarai/cedar/issues) | Bug reports and feature requests  |
-| 🐦 **Twitter**       | [@cedar_ai](https://twitter.com/cedar_ai)              | Updates and announcements         |
-| 📧 **Email**         | support@cedar.ai                                       | Enterprise support                |
+| Platform             | Link                                                       | Description                       |
+| -------------------- | ---------------------------------------------------------- | --------------------------------- |
+| 📚 **Documentation** | [docs.hypergen.ai](https://docs.hypergen.ai)               | Complete guides and API reference |
+| 💬 **Discord**       | [Join our Discord](https://discord.gg/hypergen)            | Community support and discussions |
+| 🐙 **GitHub Issues** | [Report bugs](https://github.com/hypergen/hypergen/issues) | Bug reports and feature requests  |
+| 🐦 **Twitter**       | [@hypergen](https://twitter.com/hypergen)                  | Updates and announcements         |
+| 📧 **Email**         | support@hypergen.ai                                        | Enterprise support                |
 
 ## 🔄 Migration from Other Frameworks
 
@@ -287,9 +288,9 @@ from diffusers import StableDiffusionPipeline
 pipe = StableDiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5")
 image = pipe("A cat").images[0]
 
-# After (cedar)
-import cedar
-model = cedar.Model.load("runwayml/stable-diffusion-v1-5")
+# After (hypergen)
+import hypergen
+model = hypergen.Model.load("runwayml/stable-diffusion-v1-5")
 image = model.generate("A cat")
 ```
 
@@ -299,30 +300,30 @@ image = model.generate("A cat")
 # Before (100+ lines of training code)
 # ... complex setup, data loading, training loops ...
 
-# After (cedar)
-import cedar
-model = cedar.Model.load("flux/flux-dev")
-dataset = cedar.Dataset.load("./data")
+# After (hypergen)
+import hypergen
+model = hypergen.Model.load("flux/flux-dev")
+dataset = hypergen.Dataset.load("./data")
 lora = model.train_lora(dataset, steps=1000)
 ```
 
 ## 🏆 Showcase
 
-Models trained with Cedar:
+Models trained with HyperGen:
 
-- [Cedar-FLUX-Portraits](https://huggingface.co/cedar-models/flux-portraits) - Professional portrait LoRA
-- [Cedar-CogVideoX-Nature](https://huggingface.co/cedar-models/cogvideox-nature) - Nature documentary style
-- [Cedar-SDXL-Architecture](https://huggingface.co/cedar-models/sdxl-architecture) - Architectural visualization
+- [HyperGen-FLUX-Portraits](https://huggingface.co/hypergen-models/flux-portraits) - Professional portrait LoRA
+- [HyperGen-CogVideoX-Nature](https://huggingface.co/hypergen-models/cogvideox-nature) - Nature documentary style
+- [HyperGen-SDXL-Architecture](https://huggingface.co/hypergen-models/sdxl-architecture) - Architectural visualization
 
-_Want to showcase your Cedar model? [Submit here](https://docs.cedar.ai/showcase)_
+_Want to showcase your HyperGen model? [Submit here](https://docs.hypergen.ai/showcase)_
 
 ## 📄 License
 
-Cedar is released under the [Apache 2.0 License](LICENSE).
+HyperGen is released under the [Apache 2.0 License](LICENSE).
 
 ## 🙏 Acknowledgments
 
-Cedar builds upon the incredible work of:
+HyperGen builds upon the incredible work of:
 
 - [🤗 Hugging Face Diffusers](https://github.com/huggingface/diffusers) - Core diffusion model implementations
 - [PyTorch](https://pytorch.org) - Deep learning framework
@@ -330,16 +331,16 @@ Cedar builds upon the incredible work of:
 - [xFormers](https://github.com/facebookresearch/xformers) - Memory-efficient transformers
 - [PEFT](https://github.com/huggingface/peft) - Parameter-efficient fine-tuning
 
-Special thanks to our [contributors](https://github.com/cedarai/cedar/graphs/contributors) and the open-source AI community.
+Special thanks to our [contributors](https://github.com/hypergen/hypergen/graphs/contributors) and the open-source AI community.
 
 ---
 
 <div align="center">
 
-**Built with ❤️ by the Cedar team**
+**Built with ❤️ by the HyperGen team**
 
-[Website](https://cedar.ai) • [Documentation](https://docs.cedar.ai) • [Discord](https://discord.gg/cedar) • [Twitter](https://twitter.com/cedar_ai)
+[Website](https://hypergen.ai) • [Documentation](https://docs.hypergen.ai) • [Discord](https://discord.gg/hypergen) • [Twitter](https://twitter.com/hypergen_ai)
 
-_If Cedar accelerated your diffusion models, please ⭐ this repo and [share your results](https://docs.cedar.ai/showcase)!_
+_If HyperGen accelerated your diffusion models, please ⭐ this repo and [share your results](https://docs.hypergen.ai/showcase)!_
 
 </div>
